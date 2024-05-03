@@ -1,8 +1,13 @@
 #include <bits/stdc++.h>
+#define tests    \
+    int test;    \
+    cin >> test; \
+    while (test--)
 using namespace std;
+
 #define all(x) x.begin(), x.end()
 #define int long long
-#define nl cout<<"\n";
+#define nl cout << "\n";
 
 void solve();
 int32_t main()
@@ -12,32 +17,18 @@ int32_t main()
     freopen("out.txt", "w", stdout);
 #endif
 
-    int test;
-    cin >> test;
-    while (test--)
-    {
-        solve();
-    }
+    tests
+    solve();
 }
 
 void solve()
 {
-    int n; cin>>n;
-    int r[n], a[n];
-    for(int i=1; i<n; i++){
-        cin>> r[i];
-    }
-    
-    /*
-            2    4    1
-        1000 1002 1006  1007 
-    */
+    int n;
+    cin >> n;
+    vector<int> arr(n);
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
 
-   a[0] = 1000;
-   for(int i=1; i<n;i++){
-        a[i] = r[i] + a[i-1]; 
-   }
-
-    for(auto e : a) cout << e << " " ;nl;
-
+    for (int i = 0; i < n; i++)
+        cout << arr[i] << " ";
 }
