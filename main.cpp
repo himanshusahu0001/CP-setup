@@ -1,23 +1,43 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define all(x) x.begin(), x.end()
+#define int long long
+#define nl cout<<"\n";
 
-int main()
+void solve();
+int32_t main()
 {
-    // For getting input from "input.txt"
+#ifndef ONLINE_JUDGE
     freopen("in.txt", "r", stdin);
-
-    // For printing the output to "output.txt" file
     freopen("out.txt", "w", stdout);
+#endif
 
-    int n;
-    cin >> n;
-    vector<int> arr(n);
-    for (int i = 0; i < n; i++)
-        cin >> arr[i];
-
-    for (auto e : arr)
+    int test;
+    cin >> test;
+    while (test--)
     {
-        cout << e << " ";
-
+        solve();
     }
+}
+
+void solve()
+{
+    int n; cin>>n;
+    int r[n], a[n];
+    for(int i=1; i<n; i++){
+        cin>> r[i];
+    }
+    
+    /*
+            2    4    1
+        1000 1002 1006  1007 
+    */
+
+   a[0] = 1000;
+   for(int i=1; i<n;i++){
+        a[i] = r[i] + a[i-1]; 
+   }
+
+    for(auto e : a) cout << e << " " ;nl;
+
 }
