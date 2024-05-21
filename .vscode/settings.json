@@ -19,7 +19,17 @@
         "format": "cpp",
         "ranges": "cpp",
         "stacktrace": "cpp",
-        "valarray": "cpp"
+        "valarray": "cpp",
+        "*.tcc": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "bitset": "cpp"
     },
-    "C_Cpp.default.compilerPath": ""
+    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/g++",
+    "C_Cpp.autocompleteAddParentheses": true,
+    "C_Cpp.default.cppStandard": "gnu++17",
+    "C_Cpp.default.intelliSenseMode": "macos-gcc-x64",
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.default.mergeConfigurations": true,
+    "C_Cpp.clang_format_sortIncludes": null
 }

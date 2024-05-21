@@ -3,5 +3,9 @@
         {
             "path": "."
         }
-    ]
+    ],
+    "settings": {
+        "workbench.sideBar.location": "left",
+        "files.autoSave": "afterDelay"
+    }
 }

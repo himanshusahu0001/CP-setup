@@ -35,9 +35,10 @@ public:
     // change p and M if needed
     ll p = 31; // a prime number
     // const ll M = 1e9+7; 
+    ll n;
 
     HashedString(string &s){
-        ll n = s.size();
+        n = s.size();
         ps = vector<ll>(n,1);
         psi = vector<ll>(n);
         hash = vector<ll>(n);

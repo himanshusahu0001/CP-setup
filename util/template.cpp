@@ -18,19 +18,15 @@ int32_t main()
 //     freopen("out.txt", "w", stdout);
 // #endif
 
-
-#ifndef ONLINE_JUDGE
-    freopen("billboard.in", "r", stdin);
-    freopen("billboard.out", "w", stdout);
-#endif
-
-   
-
-    // TESTS
+    TESTS
     solve();
     
 }
 
-void solve() {
-   
+
+
+void solve(){
+ 
+
 }
+    
