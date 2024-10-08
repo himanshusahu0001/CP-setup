@@ -79,3 +79,7 @@ public:
     }
 };
 
+
+string charToString(char c){
+    return string(1,c);
+}

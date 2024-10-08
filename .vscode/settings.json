@@ -31,5 +31,8 @@
     "C_Cpp.default.intelliSenseMode": "macos-gcc-x64",
     "C_Cpp.formatting": "clangFormat",
     "C_Cpp.default.mergeConfigurations": true,
-    "C_Cpp.clang_format_sortIncludes": null
+    "C_Cpp.clang_format_sortIncludes": null,
+    "C_Cpp.errorSquiggles": "disabled",
+    "c-cpp-flylint.enable": false,
+    "window.zoomLevel": 0.4
 }
